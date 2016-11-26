@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 17</title>
+    <link href='css/task17.css' type='text/css' rel='stylesheet'/>
+    <script src="js/task17.js" defer='defer'></script>
+  </head>
+<body>
+  <fieldset id="form-gra-time">
+    <legend>请选择日期粒度：</legend>
+    <label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
+    <label>周<input name="gra-time" value="week" type="radio"></label>
+    <label>月<input name="gra-time" value="month" type="radio"></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>请选择查看的城市：</legend>
+    <select id="city-select" onchange='graCityChange()' >
+      <option value='beijing'>北京</option>
+      <option value='shanghai'>上海</option>
+      <option value='guangzhou'>广州</option>
+      <option value='shenzhen'>深圳</option>
+      <option value='chengdu'>成都</option>
+      <option value='xian'>西安</option>
+      <option value='fuzhou'>福州</option>
+      <option value='xiamen'>厦门</option>
+      <option value='shenyang'>沈阳</option>
+    </select>
+  </fieldset>
+
+  <div class="aqi-chart-wrap">
+    <ul class='excel'>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 15</title>
+  </head>
+<body>
+
+  <ul id="source">
+    <li>北京空气质量：<b>90</b></li>
+    <li>上海空气质量：<b>70</b></li>
+    <li>天津空气质量：<b>80</b></li>
+    <li>广州空气质量：<b>50</b></li>
+    <li>深圳空气质量：<b>40</b></li>
+    <li>福州空气质量：<b>32</b></li>
+    <li>成都空气质量：<b>90</b></li>
+  </ul>
+
+  <ul id="resort">
+    <!-- 
+    <li>第一名：北京空气质量：<b>90</b></li>
+    <li>第二名：北京空气质量：<b>90</b></li>
+    <li>第三名：北京空气质量：<b>90</b></li>
+     -->
+
+  </ul>
+
+  <button id="sort-btn">排序</button>
+
+<script type="text/javascript">
+function getData(){
+  var aqi,city = new Array();
+  var info = document.getElementById('source').getElementsByTagName('li');
+  aqi = document.getElementById('source').getElementsByTagName('b');
+  for(var i=0;i<info.length;i++){
+    city[i] = info[i].innerText.charAt(0)+info[i].innerText.charAt(1);
+  } 
+
+  var Data = new Array();
+  for(i=0;i<info.length;i++){
+    Data[i]=new Array();
+  for(var j=0;j<2;j++){}
+    Data[i][0] = city[i];
+    Data[i][1] = aqi[i].innerText;
+  }
+
+  Data.sort(function(a,b){
+    return a[1] - b[1];
+  });
+
+  var oList = document.getElementById('resort');
+  for(var i=0;i<Data.length;i++){
+    var newele = document.createElement('li');
+    newele.innerHTML = Data[i][0] + '空气质量：' +'<b>'+Data[i][1]+'</b>';
+    oList.appendChild(newele);
+  }
+
+  document.getElementById('sort-btn').disabled = true;
+}
+function init(){
+  document.getElementById('sort-btn').onclick = getData;
+}
+init();
+</script>
+</body>
+</html>

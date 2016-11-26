@@ -1,0 +1,30 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+.aqi-chart-wrap{
+	width: 900px;
+	height: 600px;
+	border: 1px solid black;
+	margin: 20px 200px;
+}
+.excel li{
+	display: inline-block;
+	height: 95%;
+	position: relative;
+	margin-left: 3px;
+}
+.excel div{
+	width:100%;
+	position: absolute;
+	bottom:0px;
+}
+.day{
+	width: .7%;
+}
+.week{
+	width: 5%;
+}
+.month{
+	width: 10%;
+}
