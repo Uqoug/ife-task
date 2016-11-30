@@ -2,6 +2,7 @@
 	margin:0px;
 	padding: 0px;
 	font-family: "微软雅黑";
+
 }
 body{
 	margin:0px;
@@ -241,34 +242,133 @@ body{
 	height: 100%;
 	padding: 0px;
 	display: inline-block;
+	overflow: hidden;
 }
-#nav_picturebox .firstbox div:nth-of-type(1){
+#nav_picturebox .firstbox>div:nth-of-type(1){
 	width:66%;
-	background-image: url(../img/task7/images/task7_02.png);
+	background-image: url(../img/task7/images/task7_02.gif);
 	margin-left: -1px;
 }
-#nav_picturebox .firstbox div:nth-of-type(2){
+#nav_picturebox .firstbox>div:nth-of-type(2){
 	width:34%;
-	background-color: #000;
-	margin-left: -5px;
+	margin-left: -6px;
+	vertical-align: top;
 }
+#nav_picturebox .textbox2 h2{
+	margin-top: 165px;
+	text-align: center;
+	font-weight: normal;
+}
+#nav_picturebox .textbox2 h2 span{
+	color: #e74f4d;
+}
+#nav_picturebox .textbox2>p{
+	margin: 32px 70px 35px;
+	font-size: 14px;
+	opacity: .7;
+}
+#nav_picturebox .textbox2 .more{
+	display: block;
+	text-align: center;
+	line-height: 31px;
+	text-decoration: none;
+	color: #e74f4d;
+	width: 104px;
+	height: 32px;
+	margin: 0px auto;
+	border: 1px solid #e74f4d;
+	transition: all .3s ease-out;
+}
+#nav_picturebox .textbox2 .more:hover{
+	color: white;
+	background-color: #e74f4d;
+}
+#nav_picturebox .textbox2 .page{
+	margin: 20px auto;
+	text-align: center;
+}
+#nav_picturebox .textbox2 .page a{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #919292;
+	border-radius: 50%;
+	margin:5px;
+	cursor: default;
+	transition: all .3s;
+}
+#nav_picturebox .textbox2 .page a:hover{
+	background-color: #919292;
+}
+
+
 
 #nav_picturebox .secondbox{
 	width: 100%;
 	height: 520px;
 }
-#nav_picturebox .secondbox div:nth-of-type(1){
+#nav_picturebox .secondbox>div:nth-of-type(1){
 	width: 33%;
 	background-color: #e74f4d;
 }
-#nav_picturebox .secondbox div:nth-of-type(2){
+#nav_picturebox .secondbox .textbox3 p{
+	text-align: center;
+	color: white;
+	margin-top: 170px;
+	margin-bottom: 20px;
+}
+#nav_picturebox .secondbox .textbox3 p span{
+	text-decoration: underline;
+}
+#nav_picturebox .secondbox .textbox3 a{	
+	display: block;
+	text-align: center;
+	line-height: 31px;
+	text-decoration: none;
+	color: white;
+	width: 104px;
+	height: 32px;
+	margin: 0px auto;
+	border: 1px solid white;
+	transition: all .3s ease-out;
+}
+#nav_picturebox .secondbox .textbox3 a:hover{
+	color:#e74f4d;
+	background-color: white;
+}
+#nav_picturebox .secondbox>div:nth-of-type(2){
 	width: 33%;
 	margin-left: -5px;
 }
-#nav_picturebox .secondbox div:nth-of-type(3){
+#nav_picturebox .secondbox .textbox4 p{
+	text-align: center;
+	color: #e74f4d;
+	margin-top: 170px;
+	margin-bottom: 20px;
+}
+#nav_picturebox .secondbox .textbox4 p span{
+	text-decoration: underline;
+}
+#nav_picturebox .secondbox .textbox4 a{	
+	display: block;
+	text-align: center;
+	line-height: 31px;
+	text-decoration: none;
+	color: #e74f4d;
+	width: 104px;
+	height: 32px;
+	margin: 0px auto;
+	border: 1px solid #e74f4d;
+	transition: all .3s ease-out;
+}
+#nav_picturebox .secondbox .textbox4 a:hover{
+	color: white;
+	background-color: #e74f4d;
+}
+#nav_picturebox .secondbox>div:nth-of-type(3){
 	width: 34%;
 	margin-left: -5px;
-	background-image: url(../img/task7/images/task7_05.png);
+	background-image: url(../img/task7/images/task7_05.gif);
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -279,8 +379,53 @@ body{
 	width: 100%;
 	height: 750px;
 }
-
-
+#applybox .title{
+	text-align: center;
+}
+#applybox .title h2{
+	background-color: #000;
+	display: block;
+	margin-top: 120px;
+	padding-bottom: 15px;
+	color: #323333;
+	background:linear-gradient(to bottom,#e7504d,#e7504d)no-repeat bottom/30px 3px;
+}
+#applybox .title p{
+	margin-top: 15px;
+	font-size: 12px;
+	color: #aaa;
+}
+#boxwraper{
+	margin-top: 108px;
+	display: -webkit-flex;
+}
+#clause{
+	flex:1;
+}
+#clause div{
+	margin:0px 37px 40px 140px;
+}
+#clause h3{
+	font-size: 14px;
+	color: #666160;
+	clear: both;
+}
+#clause p{
+	font-size: 12px;
+	color: #adabab;
+}
+#clause a{
+	font-size: 11px;
+	color: #adabab;
+	float: right;
+}
+#clause a:hover{
+	color: white;
+	background-color: #adabab;
+}
+#formbox{
+	flex:2;
+}
 /*footer*/
 #footer{
 	width: 100%;
