@@ -45,6 +45,7 @@ body{
 }
 
 #heading .nav li a{
+	font-size: 15px;
 	text-decoration: none;
 	color: #787b83;
 	display: block;
@@ -56,7 +57,7 @@ body{
 	transition: all .3s ease-out;
 }
 #heading .nav li:nth-of-type(6) a{
-	padding-top: 20px;
+	padding-top: 19px;
 
 }
 #heading .nav li a:hover{
@@ -395,6 +396,7 @@ body{
 	font-size: 12px;
 	color: #aaa;
 }
+/*--------------------------------*/
 #boxwraper{
 	margin-top: 108px;
 	display: -webkit-flex;
@@ -403,9 +405,10 @@ body{
 	flex:1;
 }
 #clause div{
-	margin:0px 37px 40px 140px;
+	margin:15px 37px 40px 140px;
 }
 #clause h3{
+	margin-bottom: 6px;
 	font-size: 14px;
 	color: #666160;
 	clear: both;
@@ -423,12 +426,91 @@ body{
 	color: white;
 	background-color: #adabab;
 }
+/*-------------------------------*/
 #formbox{
 	flex:2;
+}
+#formbox input{
+	background-color: #ededee;
+	border: none;
+	transition: background-color .3s;
+	width: 40%;
+	height: 40px;
+	box-sizing: border-box;
+	margin: 1%;
+	text-indent: 10px;
+}
+#formbox textarea{
+	background-color: #ededee;
+	border: none;
+	transition: background-color .3s;
+	box-sizing: border-box;
+	margin: 1%;
+	width: 82.5%;
+	height: 120px;
+	padding: 10px;
+}
+#formbox input:focus,#formbox textarea:focus{
+	background-color: #fff;
+	border: 3px solid #ededee;
+	outline:none;
+}
+#formbox a{
+	display: block;
+	background-color: #ededee;
+	margin-left: 1%;
+	text-align: center;
+	text-decoration: none;
+	height: 40px;
+	line-height: 40px;
+	color: #323333;
+	width: 82.5%;
+	transition: all .3s;
+}
+#formbox a:hover{
+	background-color: #b3b3b3;
+	color: white;
 }
 /*footer*/
 #footer{
 	width: 100%;
 	height: 415px;
 	background-color: #32353e;
+}
+#footer h2{
+	font-weight: normal;
+	color: white;
+	text-align: center;
+	padding-top: 92px;
+}
+#footer p{
+	color: white;
+	text-align: center;
+}
+#footer .sumbit_email{
+	display: -webkit-flex;
+	margin:28px 0px;
+	justify-content: center;
+}
+#footer .sumbit_email input:nth-of-type(1){
+	height: 42px;
+	width: 30%;
+}
+#footer .sumbit_email input:nth-of-type(2){
+	width: 7%;
+	background-color: #88c9f2;
+	outline: none;
+	border: none;
+	color: white;
+	transition: all .3s;
+}
+#footer .sumbit_email input:nth-of-type(2):hover{
+	background-color: #1e82d9;
+}
+#footer .logobox{
+	text-align: center;
+}
+#footer .logobox li{
+	display: inline-block;
+	padding: 10px;
 }
